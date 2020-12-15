@@ -1,0 +1,74 @@
+{
+        "botnets": "bot.bot.bot.bot",
+        "sigset": "sig.sig.sig.sig",
+        "nsmVersions": {
+                "9.1": "man.man.man.man",
+                "9.2": "man.man.man.man",
+                "10.1": "man.man.man.man",
+                "8.3": "man.man.man.man"
+        },
+        "nscmVersions": {
+                "9.1": "man.man.man.man",
+                "9.2": "man.man.man.man",
+                "10.1": "man.man.man.man",
+                "8.3": "man.man.man.man"
+        },
+        "gam": "gam.gam.gam.gam",
+        "sensorVersions": {
+                "note": "this depends on sensor, and which  major rev of NSM...can be tricky",
+                "9.1": {
+                        "IPS-NS9100": "sen.sen.sen.sen",
+                        "IPS-NS9200": "sen.sen.sen.sen",
+                        "IPS-NS9300": "sen.sen.sen.sen",
+                        "IPS-NS9500": "sen.sen.sen.sen",
+                        "IPS-NS3XXX": "sen.sen.sen.sen",
+                        "IPS-NS5XXX": "sen.sen.sen.sen",
+                        "IPS-NS7XXX": "sen.sen.sen.sen",
+                        "M-8000": "sen.sen.sen.sen",
+                        "M-4050": "sen.sen.sen.sen",
+                        "M-6050": "sen.sen.sen.sen",
+                        "IPS-VM600": "sen.sen.sen.sen"
+                },
+                "9.2": {
+                        "IPS-NS9100": "sen.sen.sen.sen",
+                        "IPS-NS9200": "sen.sen.sen.sen",
+                        "IPS-NS9300": "sen.sen.sen.sen",
+                        "IPS-NS9500": "sen.sen.sen.sen",
+                        "IPS-NS3XXX": "sen.sen.sen.sen",
+                        "IPS-NS5XXX": "sen.sen.sen.sen",
+                        "IPS-NS7XXX": "sen.sen.sen.sen",
+                        "M-8000": "sen.sen.sen.sen",
+                        "M-4050": "sen.sen.sen.sen",
+                        "M-6050": "sen.sen.sen.sen",
+                        "IPS-VM600": "sen.sen.sen.sen"
+                },
+                "10.1": {
+                        "IPS-NS9100": "sen.sen.sen.sen",
+                        "IPS-NS9200": "sen.sen.sen.sen",
+                        "IPS-NS9300": "sen.sen.sen.sen",
+                        "IPS-NS9500": "sen.sen.sen.sen",
+                        "IPS-NS3XXX": "sen.sen.sen.sen",
+                        "IPS-NS5XXX": "sen.sen.sen.sen",
+                        "IPS-NS7XXX": "sen.sen.sen.sen",
+                        "M-8000": "sen.sen.sen.sen",
+                        "M-4050": "sen.sen.sen.sen",
+                        "M-6050": "sen.sen.sen.sen",
+                        "IPS-VM600": "sen.sen.sen.sen"
+                },
+                "8.3": {
+                        "IPS-NS9100": "sen.sen.sen.sen",
+                        "IPS-NS9200": "sen.sen.sen.sen",
+                        "IPS-NS9300": "sen.sen.sen.sen",
+                        "IPS-NS9500": "sen.sen.sen.sen",
+                        "IPS-NS3XXX": "sen.sen.sen.sen",
+                        "IPS-NS5XXX": "sen.sen.sen.sen",
+                        "IPS-NS7XXX": "sen.sen.sen.sen",
+                        "M-8000": "sen.sen.sen.sen",
+                        "M-4050": "sen.sen.sen.sen",
+                        "M-6050": "sen.sen.sen.sen",
+                        "IPS-VM600": "sen.sen.sen.sen"
+                }
+        },
+        "nsmMajorRevision": "10.1",
+        "nsmCustomerVersion": "10.1.7.4"
+}

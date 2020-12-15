@@ -1,0 +1,4 @@
+.\nsmHealthWatch-latest.exe
+
+pause
+

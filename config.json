@@ -1,0 +1,22 @@
+{
+        "tempCleanup": false,
+        "credsFile": "creds.json",
+        "numSensorsToQuerySimultaneously": 3,
+        "queryTimeout": 60,
+        "queryRetries": 10,
+        "DEBUG": false,
+        "externalIntegrations": {
+                "atd": 0,
+                "gam": 0,
+                "epo": 0,
+                "gti": 0,
+                "cads": 0,
+                "ntba": 0,
+                "tie/dxl": 0,
+                "inboundssl": 0,
+                "outboundssl": 0,
+                "failover": 0
+        },
+        "enableAnalysis": true,
+        "enableDataCollection": false
+}

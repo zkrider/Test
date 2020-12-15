@@ -1,0 +1,1437 @@
+{
+	"sensorData": {
+					"SigsetVersion": "sig.sig.sig.sig",
+					"DATVersion": "bot.bot.bot.bot",
+					"nsmVersion": "man.man.man.man",
+					"sensorUpdateInfo": {
+							"pendingChanges": {
+									"isPolicyConfigurationChanged": false,
+									"isConfigurationChanged": false,
+									"isMalwareConfigurationChanged": false,
+									"isSignatureSetConfigurationChanged": false,
+									"isSSLConfigurationChanged": false,
+									"isBotnetConfigurationChanged": false,
+									"isGloablPolicyConfigurationChanged": false
+							},
+							"isSigsetConfigPushRequired": false,
+							"isSSLPushRequired": false,
+							"isBotnetPushRequired": false,
+							"isGAMUpdateRequired": false
+					},
+					"statelessScanningExceptionEnabled": {
+							"enabled": false
+					},
+					"statelessScanningException": {
+							"tcpRules": {
+									"tcpPortRangeList": []
+							},
+							"udpRules": {
+									"udpPortRangeList": []
+							},
+							"vlanRules": {
+									"vlanIdRangeList": []
+							}
+					},
+					"ipv6": {
+							"ipv6Mode": "SCAN_IPV_6_TRAFFIC"
+					},
+					"quarantinedhost": {
+							"QuarantineHostDescriptor": ["descriptor"]
+					},
+					"quarantinedhostdetails": {
+							"quarantineHostDetail": ["detail"]
+					},
+					"performancemonitoring": {
+							"inheritSettings": true,
+							"enableMetricCollection": true,
+							"enableThresholdAnalysis": true,
+							"visibleToChildAdminDomain": true,
+							"enableCPUUtilizationMetricCollection": true,
+							"enablePortThroughputUtilizationMetricCollection": true
+					},
+					"nonstandardports": {
+							"NonStandardPortResponseList": []
+					},
+					"simulatedblockingStatus": {
+							"SimulatedBlockingOptionForSensor": "DISABLE_SIMULATION_FOR_ENTIRE_DEVICE"
+					},
+					"layer7datacollectionStatus": {
+							"flows": {
+									"percentFlowsCaptureL7": 20,
+									"maxConcurrentFlowsSupported": 213202
+							},
+							"protocols": [
+									{
+											"protocolName": "smtp",
+											"state": "ENABLE",
+											"fields": [
+													{
+															"fieldName": "SMTP Sender",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "SMTP Attachments",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "SMTP Banner",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "SMTP Recipients",
+															"enableStatus": true
+													}
+											]
+									},
+									{
+											"protocolName": "ftp",
+											"state": "ENABLE",
+											"fields": [
+													{
+															"fieldName": "FTP Banner",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "FTP User Name",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "FTP File Name",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "FTP Action",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "FTP Return Code",
+															"enableStatus": true
+													}
+											]
+									},
+									{
+											"protocolName": "telnet",
+											"state": "ENABLE",
+											"fields": [
+													{
+															"fieldName": "TELNET User Name",
+															"enableStatus": true
+													}
+											]
+									},
+									{
+											"protocolName": "http",
+											"state": "ENABLE",
+											"fields": [
+													{
+															"fieldName": "HTTP Request URL",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "HTTP CLSID",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "HTTP Host",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "HTTP Server Type",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "HTTP User-Agent",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "HTTP Request Referer",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "HTTP URI",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "HTTP Response Content Type",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "HTTP Return Code",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "HTTP Request Method",
+															"enableStatus": true
+													}
+											]
+									},
+									{
+											"protocolName": "netbios-ss",
+											"state": "ENABLE",
+											"fields": [
+													{
+															"fieldName": "NetBIOS Action",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "NetBIOS File Name",
+															"enableStatus": true
+													}
+											]
+									},
+									{
+											"protocolName": "ssl",
+											"state": "ENABLE",
+											"fields": [
+													{
+															"fieldName": "SSL Server Name Indication",
+															"enableStatus": true
+													},
+													{
+															"fieldName": "SSL Certificate Common Name",
+															"enableStatus": true
+													}
+											]
+									}
+							]
+					},
+					"passivedeviceprofiling": {
+							"inheritSettingsfromIPSSettingsNode": true,
+							"passiveDeviceProfilingSetting": {
+									"profilingTechniques": {
+											"DHCPEnableStatus": true,
+											"TCPEnableStatus": true,
+											"HTTPEnableStatus": true
+									},
+									"profileExpiration": {
+											"duration": 5,
+											"unit": "MINUTES"
+									},
+									"hostInactivityTimerInHrs": 1
+							},
+							"bindIPForCopiedDHCPTraffic": false,
+							"PassiveDeviceProfilingStateForSensor": "ENABLE_DEVICEPROFILING_FOR_ENTIRE_DEVICE"
+					},
+					"attackcompilation": {
+							"enableDefaultMcAfeeAttacks": true,
+							"enableCustomAttacksMcAfeeFormat": true,
+							"enableCustomAttacksImportedSnortRules": true
+					},
+					"ipsettings": {
+							"ipv4Parameter": {
+									"fragmentTimer": 30,
+									"overlapOption": "OLD_DATA",
+									"smallestFragmentSize": 256,
+									"smallFragmentThreshold": 10000,
+									"fragmentReassembly": "ENABLED"
+							},
+							"ipv6Parameter": {
+									"ipv6Scanning": "SCAN_IPV_6_TRAFFIC_FOR_ATTACKS",
+									"overlapOption": "OLD_DATA",
+									"smallestFragmentSize": 48,
+									"smallFragmentThreshold": 10000
+							},
+							"jumboFrameParsing": "ENABLED"
+					},
+					"tcpsettings": {
+							"tcpParameter": {
+									"supportedUDPFlows": 25000,
+									"tcbInactivityTimesInMinutes": 10,
+									"tcpSegmentTimerInSeconds": 60,
+									"tcp2MSLTimerInSeconds": 10,
+									"coldStartTimeInMinutes": 60,
+									"coldStartAckScanAlertDiscardIntervalInMinutes": 15,
+									"coldStartDropAction": "FORWARD_FLOWS",
+									"tcpFlowViolation": "PERMIT_OUT_OF_ORDER",
+									"unsolicitedUDPPacketTimeOutInSeconds": 60,
+									"normalization": "OFF",
+									"tcpOverlapOption": "NEW_DATA",
+									"synCookie": {
+											"synCookieOption": "ENABLED",
+											"inboundThresholdValue": 25600,
+											"outboundThresholdValue": 25600
+									},
+									"resetUnfinished3WayHandshakeConnection": "ENABLED",
+									"dnsSinkholingTimeToLive": 720,
+									"dnsSinkholingIPAddress": "127.0.0.1",
+									"ftpAcceleration": "DISABLED"
+							}
+					},
+					"alertsupression": {
+							"isEnabled": true,
+							"uniqueSourceDestinationIPpairs": 10,
+							"individualAlerts": 1,
+							"suppressSeconds": 120,
+							"alertCorrelation": 5,
+							"packetsLoggedPerFlow": 1000,
+							"enablePacketLogChannelEncryption": true
+					},
+					"firewalllogging": {
+							"loggingType": "LOG_ALL_MATCHED_TRAFFIC",
+							"deliveryType": "MESSAGES_TO_TARGET_SYSLOGSERVER_VIA_MANAGER",
+							"isSuppressionEnabled": false,
+							"individualMessage": 5,
+							"suppressionInterval": 120,
+							"uniqueSourceDestinationIPpairs": 10
+					},
+					"directsyslog": {
+							"errorId": 6001,
+							"errorMessage": "Direct Sysog configuration is not present for this domain/sensor"
+					},
+					"applicationidentification": {
+							"enableApplicationIdentification": true
+					},
+					"atdintegration": {
+							"inheritSettings": "true"
+					},
+					"dospacketforwarding": {
+							"dosPacketForwarding": "Do Not Copy DoS Packets (Dos Packet Logging is disabled)"
+					},
+					"packetcapturepcapfiles": {
+							"files": []
+					},
+					"dxlintegration": {
+							"inheritSettings": true
+					},
+					"gamupdatesettings": {
+							"errorId": 9301,
+							"errorMessage": "GAM update is not supported on this sensor"
+					},
+					"deployddevicesoftware": {
+							"runningSoftwareVersion": "9.2.7.54",
+							"softwaresReadyForInstallation": [
+									"9.2.7.54"
+							]
+					},
+					"diagnosticstrace": {
+							"files": []
+					},
+					"tacacs": {
+							"inheritSettings": true
+					},
+					"advanceddeviceconfiguration": {
+							"inheritSettings": true,
+							"preAttackBytestoCapture": 256,
+							"inspectTunneledTraffic": true,
+							"cliActivityLogging": "DEVICE_AND_MANAGER",
+							"showCPUUsageinCLI": true,
+							"restrictSSHAccesstoCLI": false,
+							"enableSSHLogging": true,
+							"permittedIPv4CIDRBlocks": [],
+							"permittedIPv6CIDRBlocks": [],
+							"useTraditionalSnort": false
+					},
+					"flows": {
+							"inboundSynCookieProtection": "Active",
+							"outboundSynCookieProtection": "Active"
+					},
+					"decryptionsettings": {
+							"inheritSettings": true,
+							"enableDhSupport": true,
+							"includeDecryptedPCAPS": true
+					},
+					"nameresolution": {
+							"inheritFromIPSSetting": true,
+							"enableNameResolution": true
+					},
+					"proxyserver": {
+							"useDeviceListSettings": true
+					}
+	},
+	"healthcheck": {
+		"summary": [
+				{
+						"id": "GetNSMVersion",
+						"result": "=man.man.man.man"
+				},
+				{
+						"id": "CheckFreeMemoryAvailableToNSMProcess",
+						"result": ">4096 MB"
+				},
+				{
+						"id": "GetAlertAndPacketLogRatio",
+						"result": "<3.0"
+				},
+				{
+						"id": "UnusedIPSPolicyCounter",
+						"result": "<1"
+				},
+				{
+						"id": "GetTotalSizeOfAlertArchives",
+						"result": "<50 GB"
+				},
+				{
+						"id": "GetActiveSigsetVersion",
+						"result": "=sig.sig.sig.sig"
+				},
+				{
+						"id": "GetNumberOfCustomAttacks",
+						"result": "<1000",
+						"notes": "McAfee Native (UDS): 0\nSnort Rules: 0\nInactive References of Snort Rules: 0\nSnort Rules with no Reference: 0"
+				},
+				{
+						"id": "CheckDelayedIncomingAlerts",
+						"result": "=0.0",
+						"indicator": "low"
+				},
+				{
+						"id": "GetActiveCallbackDetectorsVersion",
+						"result": "=bot.bot.bot.bot"
+				},
+				{
+						"id": "DiskSpaceCheck",
+						"result": "<40%"
+				},
+				{
+						"id": "GetNumberOfPolicies",
+						"result": "<20"
+				},
+				{
+						"id": "CheckLowMemoryOccurrence",
+						"result": "=0"
+				},
+				{
+						"id": "MDRSyncSize",
+						"result": "<1 GB"
+				},
+				{
+						"id": "PhysicalMemory",
+						"result": ">16 GB"
+				},
+				{
+						"id": "DevicesManaged",
+						"result": "<50"
+				},
+				{
+						"id": "MalwareDiskUsageCheck",
+						"result": "<10 GB"
+				}
+		],
+		"databaseChecks": [
+				{
+						"id": "BackupFilesSpaceCheck",
+						"result": "<200 GB"
+				},
+				{
+						"id": "CheckPacketCaptureRate",
+						"result": "<45 /sec"
+				},
+				{
+						"id": "OrphanedTemporaryTables",
+						"result": "=0"
+				},
+				{
+						"id": "CheckAlertRate",
+						"result": "<10 alerts/sec"
+				},
+				{
+						"id": "CheckManagerDatabaseInstalledProperly",
+						"result": "=Pass"
+				},
+				{
+						"id": "CheckSolrDatabaseSize",
+						"result": "<25 GB"
+				},
+				{
+						"id": "GetTotalNumberOfPacketLogs",
+						"result": "<50,000,000"
+				},
+				{
+						"id": "GetTotalNumberOfAlerts",
+						"result": "<5,000,000"
+				},
+				{
+						"id": "CheckEventTableIndexes",
+						"result": "=Pass"
+				},
+				{
+						"id": "MySQLDatabaseDiskUsage",
+						"result": "<33%",
+						"notes": "Database Size: 18 GB (Largest Table: 10 GB)\nUsed Space: 39 GB\nTotal Space: 231 GB",
+						"notes2": "need specific check for this guy"
+				},
+				{
+						"id": "ForensicLoggingAttackCheck",
+						"result": "<10"
+				},
+				{
+						"id": "CheckCorruptedBackups",
+						"result": "=0"
+				},
+				{
+						"id": "CheckNumberOfDbConnections",
+						"result": "<60"
+				},
+				{
+						"id": "CheckForSlowQueriesInDatabase",
+						"result": "=0"
+				}
+		],
+		"connectivityChecks": [
+				{
+						"id": "CallbackDetectorsUpdateServerConnectivity",
+						"result": "=Pass"
+				},
+				{
+						"id": "NameResolutionCheck",
+						"result": "=Pass"
+				},
+				{
+						"id": "CheckEmailServerConnectivity",
+						"result": "=Pass"
+				},
+				{
+						"id": "GetMDRPeerIP",
+						"result": "=Pass"
+				},
+				{
+						"id": "CheckUpdateServerConnectivity",
+						"result": "=Pass"
+				},
+				{
+						"id": "CheckWebTierResponsivenessCheck",
+						"result": "<1000 ms"
+				},
+				{
+						"id": "NSCMConnectivity",
+						"result": "=Pass"
+				}
+		]
+	},
+	"managerData": {
+            	"autoupdateconfiguration_botnet": {
+                        "automaticDownloadDetails": {
+                                "enableDownload": true,
+                                "schedule": "FREQUENTLY",
+                                "recur": "6 Hr"
+                        },
+                        "automaticDeploymentDetails": {
+                                "enableDeployInRealTime": true,
+                                "enableDeployAtScheduledInterval": true,
+                                "schedule": "FREQUENTLY",
+                                "recur": "8 Hr"
+                        }
+                },
+                "autoupdateconfiguration_sigset": {
+                        "automaticDownloadDetails": {
+                                "enableDownload": true,
+                                "schedule": "FREQUENTLY",
+                                "recur": "6 Hr"
+                        },
+                        "automaticDeploymentDetails": {
+                                "enableDeployInRealTime": true,
+                                "enableDeployAtScheduledInterval": true,
+                                "schedule": "FREQUENTLY",
+                                "recur": "8 Hr"
+                        }
+                },
+                "customattackeditor_attackcount": {
+                        "customMcAfeeExploitAttacksLimit": 4500,
+                        "customMcAfeeExploitAttacksCurrentCount": "2500",
+                        "snortRulesSupporting_NS_M_VM_SeriesDevicesLimit": 5000,
+                        "snortRulesSupporting_NS_M_VM_SeriesDevicesCurrentCount": "2500"
+                },
+				"malwarearchive_list": {
+                        "archiveFileDetails": []
+				},
+				"GUIAccess_PasswordControl": {
+                        "PasswordStrengthSettings": {
+                                "strongPasswordRequired": true,
+                                "minPasswordLength": 8,
+                                "requireUpperCase": false,
+                                "minUpperCaseLetters": 1,
+                                "requireLowerCase": false,
+                                "minLowerCaseLetters": 1,
+                                "requireNumber": true,
+                                "minNumericLetters": 1,
+                                "requireSpecialChars": false,
+                                "minSpecialChars": 1,
+                                "sameAsLoginId": false
+                        },
+                        "PasswordHistorySettings": {
+                                "trackPasswordHistory": false,
+                                "numberOfPasswordsToTrack": 0,
+                                "minCharsToBeChanged": 0
+                        },
+                        "PasswordExpirationSettings": {
+                                "expirePasswords": false,
+                                "timeToWaitBeforePasswordChange": 0,
+                                "passwordsExpireAfter": 0,
+                                "warningInterval": 0
+                        },
+                        "AccountLockOutSettings": {
+                                "enableAccountLockout": false,
+                                "maxLoginAttempts": 0,
+                                "lockOutDuration": 0
+                        }
+                }
+	},
+	"policyAssignments": {},
+	"policies": {
+	"malwarepolicy": {
+			"properties": {
+					"policyId": 301,
+					"policyName": "everything",
+					"description": "",
+					"domainId": 0,
+					"lastModifiedTime": "2019-10-07 20:03:05",
+					"lastModifiedUser": "admin",
+					"isEditable": true,
+					"visibleToChild": true,
+					"protocolsToScan": [
+							{
+									"protocolName": "HTTP",
+									"protocolNumber": 16,
+									"enabled": true
+							},
+							{
+									"protocolName": "FTP",
+									"protocolNumber": 358,
+									"enabled": true
+							},
+							{
+									"protocolName": "SMTP",
+									"protocolNumber": 12,
+									"enabled": true
+							}
+					]
+			},
+			"scanningOptions": [
+					{
+							"fileType": "Executables",
+							"maximumFileSizeScannedInKB": 51200,
+							"malwareEngines": [
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1,
+											"status": "CHECKED"
+									},
+									{
+											"name": "Blacklist and Whitelist",
+											"id": 2,
+											"status": "CHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 4,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 8,
+											"status": "DISABLED"
+									},
+									{
+											"name": "Gateway Anti-Malware",
+											"id": 16,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "Advanced Threat Defense",
+											"id": 64,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 256,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 512,
+											"status": "DISABLED"
+									},
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1024,
+											"status": "DISABLED"
+									},
+									{
+											"name": "CADS",
+											"id": 2048,
+											"status": "CHECKED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 4096,
+											"status": "DISABLED"
+									},
+									{
+											"name": null,
+											"id": 8192,
+											"status": "DISABLED"
+									}
+							],
+							"actionThresholds": {
+									"alert": "VERY_LOW",
+									"block": "DISABLED",
+									"sendTcpReset": "DISABLED",
+									"saveFile": "DISABLED",
+									"addToBlackList": "DISABLED"
+							}
+					},
+					{
+							"fileType": "MS Office Files",
+							"maximumFileSizeScannedInKB": 51200,
+							"malwareEngines": [
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1,
+											"status": "CHECKED"
+									},
+									{
+											"name": "Blacklist and Whitelist",
+											"id": 2,
+											"status": "CHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 4,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 8,
+											"status": "DISABLED"
+									},
+									{
+											"name": "Gateway Anti-Malware",
+											"id": 16,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "Advanced Threat Defense",
+											"id": 64,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 256,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 512,
+											"status": "DISABLED"
+									},
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1024,
+											"status": "DISABLED"
+									},
+									{
+											"name": "CADS",
+											"id": 2048,
+											"status": "CHECKED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 4096,
+											"status": "CHECKED"
+									},
+									{
+											"name": null,
+											"id": 8192,
+											"status": "DISABLED"
+									}
+							],
+							"actionThresholds": {
+									"alert": "VERY_LOW",
+									"block": "DISABLED",
+									"sendTcpReset": "DISABLED",
+									"saveFile": "DISABLED",
+									"addToBlackList": "DISABLED"
+							}
+					},
+					{
+							"fileType": "PDF Files",
+							"maximumFileSizeScannedInKB": 51200,
+							"malwareEngines": [
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1,
+											"status": "CHECKED"
+									},
+									{
+											"name": "Blacklist and Whitelist",
+											"id": 2,
+											"status": "CHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 4,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 8,
+											"status": "CHECKED"
+									},
+									{
+											"name": "Gateway Anti-Malware",
+											"id": 16,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "Advanced Threat Defense",
+											"id": 64,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 256,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 512,
+											"status": "DISABLED"
+									},
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1024,
+											"status": "DISABLED"
+									},
+									{
+											"name": "CADS",
+											"id": 2048,
+											"status": "CHECKED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 4096,
+											"status": "DISABLED"
+									},
+									{
+											"name": null,
+											"id": 8192,
+											"status": "DISABLED"
+									}
+							],
+							"actionThresholds": {
+									"alert": "VERY_LOW",
+									"block": "DISABLED",
+									"sendTcpReset": "DISABLED",
+									"saveFile": "DISABLED",
+									"addToBlackList": "DISABLED"
+							}
+					},
+					{
+							"fileType": "Compressed Files",
+							"maximumFileSizeScannedInKB": 51200,
+							"malwareEngines": [
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1,
+											"status": "CHECKED"
+									},
+									{
+											"name": "Blacklist and Whitelist",
+											"id": 2,
+											"status": "CHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 4,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 8,
+											"status": "DISABLED"
+									},
+									{
+											"name": "Gateway Anti-Malware",
+											"id": 16,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "Advanced Threat Defense",
+											"id": 64,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 256,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 512,
+											"status": "DISABLED"
+									},
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1024,
+											"status": "DISABLED"
+									},
+									{
+											"name": "CADS",
+											"id": 2048,
+											"status": "CHECKED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 4096,
+											"status": "DISABLED"
+									},
+									{
+											"name": null,
+											"id": 8192,
+											"status": "DISABLED"
+									}
+							],
+							"actionThresholds": {
+									"alert": "VERY_LOW",
+									"block": "DISABLED",
+									"sendTcpReset": "DISABLED",
+									"saveFile": "DISABLED",
+									"addToBlackList": "DISABLED"
+							}
+					},
+					{
+							"fileType": "Android Application Packages",
+							"maximumFileSizeScannedInKB": 51200,
+							"malwareEngines": [
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1,
+											"status": "CHECKED"
+									},
+									{
+											"name": "Blacklist and Whitelist",
+											"id": 2,
+											"status": "CHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 4,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 8,
+											"status": "DISABLED"
+									},
+									{
+											"name": "Gateway Anti-Malware",
+											"id": 16,
+											"status": "DISABLED"
+									},
+									{
+											"name": "Advanced Threat Defense",
+											"id": 64,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 256,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 512,
+											"status": "DISABLED"
+									},
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1024,
+											"status": "DISABLED"
+									},
+									{
+											"name": "CADS",
+											"id": 2048,
+											"status": "CHECKED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 4096,
+											"status": "DISABLED"
+									},
+									{
+											"name": null,
+											"id": 8192,
+											"status": "DISABLED"
+									}
+							],
+							"actionThresholds": {
+									"alert": "VERY_LOW",
+									"block": "DISABLED",
+									"sendTcpReset": "DISABLED",
+									"saveFile": "DISABLED",
+									"addToBlackList": "DISABLED"
+							}
+					},
+					{
+							"fileType": "Java Archives",
+							"maximumFileSizeScannedInKB": 51200,
+							"malwareEngines": [
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1,
+											"status": "CHECKED"
+									},
+									{
+											"name": "Blacklist and Whitelist",
+											"id": 2,
+											"status": "CHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 4,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 8,
+											"status": "DISABLED"
+									},
+									{
+											"name": "Gateway Anti-Malware",
+											"id": 16,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "Advanced Threat Defense",
+											"id": 64,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 256,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 512,
+											"status": "DISABLED"
+									},
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1024,
+											"status": "DISABLED"
+									},
+									{
+											"name": "CADS",
+											"id": 2048,
+											"status": "CHECKED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 4096,
+											"status": "DISABLED"
+									},
+									{
+											"name": null,
+											"id": 8192,
+											"status": "DISABLED"
+									}
+							],
+							"actionThresholds": {
+									"alert": "VERY_LOW",
+									"block": "DISABLED",
+									"sendTcpReset": "DISABLED",
+									"saveFile": "DISABLED",
+									"addToBlackList": "DISABLED"
+							}
+					},
+					{
+							"fileType": "Flash Files",
+							"maximumFileSizeScannedInKB": 51200,
+							"malwareEngines": [
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1,
+											"status": "CHECKED"
+									},
+									{
+											"name": "Blacklist and Whitelist",
+											"id": 2,
+											"status": "CHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 4,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 8,
+											"status": "DISABLED"
+									},
+									{
+											"name": "Gateway Anti-Malware",
+											"id": 16,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "Advanced Threat Defense",
+											"id": 64,
+											"status": "UNCHECKED"
+									},
+									{
+											"name": "McAfee Cloud",
+											"id": 256,
+											"status": "DISABLED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 512,
+											"status": "CHECKED"
+									},
+									{
+											"name": "TIE/GTI File Reputation",
+											"id": 1024,
+											"status": "DISABLED"
+									},
+									{
+											"name": "CADS",
+											"id": 2048,
+											"status": "CHECKED"
+									},
+									{
+											"name": "NSP Analysis",
+											"id": 4096,
+											"status": "DISABLED"
+									},
+									{
+											"name": null,
+											"id": 8192,
+											"status": "DISABLED"
+									}
+							],
+							"actionThresholds": {
+									"alert": "VERY_LOW",
+									"block": "DISABLED",
+									"sendTcpReset": "DISABLED",
+									"saveFile": "DISABLED",
+									"addToBlackList": "DISABLED"
+							}
+					}
+			]
+	},
+	"protectionoptionspolicy": {
+				"policyId": 301,
+				"policyName": "allinsp",
+				"domainId": 0,
+				"visibleToChild": true,
+				"description": "allinsp",
+				"isEditable": true,
+				"lastUpdatedBy": "admin",
+				"lastUpdated": "May 01 06:37",
+				"protectionOptions": {
+						"inspectionOptions": {
+								"httpResponseTrafficScanning": "INBOUND_AND_OUTBOUND",
+								"httpResponseDecompression": "INBOUND_AND_OUTBOUND",
+								"chunkedHTTPResponseDecoding": "INBOUND_AND_OUTBOUND",
+								"htmlEncodedHTTPResponseDecoding": "INBOUND_AND_OUTBOUND",
+								"base64SMTPDecoding": "INBOUND_AND_OUTBOUND",
+								"quotedPrintableSMTPDecoding": "INBOUND_AND_OUTBOUND",
+								"msRPCSMBFragmentReassembly": "INBOUND_AND_OUTBOUND",
+								"msOfficeDeepFileInspection": "INBOUND_AND_OUTBOUND",
+								"xffHeaderParsing": "INBOUND_AND_OUTBOUND",
+								"layer7DataCollection": "INBOUND_AND_OUTBOUND",
+								"passiveDeviceProfiling": "INBOUND_AND_OUTBOUND",
+								"attackBlockingSimulation": false
+						},
+						"advancedBotnetDetectionOptions": {
+								"advancedBotnetDetection": "INBOUND_AND_OUTBOUND",
+								"sensitivity": "HIGH",
+								"exportTrafficToNTBA": false,
+								"fastFluxDetection": "DISABLED",
+								"domainGenerationAlgorithmDetection": "DISABLED",
+								"dnsSinkholing": false,
+								"domainNameWhitelistProcessing": true,
+								"cidrsExcluded": []
+						},
+						"gtiEndpointReputationAnalysysOptions": {
+								"gtiEndpointReputationAnalysys": "DISABLED",
+								"useToInfluenceSmartBlocking": false,
+								"excludeInternalEndpoint": false,
+								"cidrsExcluded": [],
+								"protocalsExcluded": [],
+								"urlReputationAnalysis": "DISABLED",
+								"urlReputationMinimumRisk": null
+						},
+						"webserverHuresticAnalysysOptions": {
+								"huresticAnalysys": "DISABLED",
+								"websitePathToProtect": null,
+								"blackListedTextList": [],
+								"websitePathToProtectList": []
+						},
+						"webserverDOSOptions": {
+								"dosPrevention": "DISABLED",
+								"maxConnectionAllowedToWS": 0,
+								"slowConnectionAttackPrevention": false,
+								"maxHTTPRequestPERSecondTOAnyPath": 0,
+								"websitePathToProtect": null,
+								"clientBrowserDetection": false,
+								"browserDetectionMethod": null,
+								"websitePathToProtectList": []
+						}
+				}
+		}
+		},
+	"domainData": {
+                        "attacksovertime": {
+                                "attacksOverTime": ["!"]
+                        },
+                        "highcpuusage": {
+                                "highUsagedevices": []
+                        },
+                        "highflowusage": {
+                                "highUsagedevices": []
+                        },
+                        "highthroughputusage": {
+                                "highUsagedevices": []
+                        },
+                        "domainnameexceptions": {
+                                "dneDetail": []
+                        },
+                        "nonstandardports": {
+                                "NonStandardPortResponseList": []
+                        },
+                        "filereputation_gti": {
+                                "inheritSettings": true,
+                                "Sensitivity": "VERY_HIGH"
+                        },
+                        "filereputation_gti_filetypes": {
+                                "fileFormat": [
+                                        "apk",
+                                        "cpl",
+                                        "drv",
+                                        "exe",
+                                        "ocx",
+                                        "pdf",
+                                        "scr",
+                                        "sys"
+                                ]
+                        },
+                        "filereputation_filetypes": {
+                                "fileStatus": [
+                                        {
+                                                "fileFormat": "apk",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "cpl",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "doc",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "docx",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "drv",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "exe",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "ocx",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "pdf",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "ppt",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "pptx",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "scr",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "sys",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "xls",
+                                                "enabled": true
+                                        },
+                                        {
+                                                "fileFormat": "xlsx",
+                                                "enabled": true
+                                        }
+                                ]
+                        },
+                        "passivedeviceprofiling": {
+                                "inheritSettingsfromParentNode": true,
+                                "passiveDeviceProfilingSetting": {
+                                        "profilingTechniques": {
+                                                "DHCPEnableStatus": true,
+                                                "TCPEnableStatus": true,
+                                                "HTTPEnableStatus": true
+                                        }
+                                }
+                        },
+                        "device": {
+                                "DeviceResponseList": ["!"]
+                        },
+                        "notification_faults_syslog": {
+                                "enableSyslog": true
+                        },
+                        "notification_firewall_syslog": {
+                                "enableSyslog": true
+								},
+                        "nameresolution": {
+                                "inheritFromIPSSetting": true,
+                                "enableNameResolution": true
+                        },
+                        "nmsips": {
+                                "nmsIPDetails": ["!"]
+                        },
+                        "failoverpair": {
+                                "FailoverPairForDomain": ["!"]
+                        },
+                        "directsyslog": {
+                                "enableSyslog": true,
+                                "isInherit": true
+                        },
+                        "activebotnets": {
+                                "botnetDetailList": []
+                        },
+                        "ipsdevices_atdintegration": {
+                                "inheritSettings": "true"
+                        },
+                        "epointegration": {
+                                "inheritSettings": true,
+                                "enableEndpointSummaryQueries": true,
+                                "enableEndpointDetailQueries": true,
+                                "enableEPOTagging": true
+                        },
+                        "dxlintegration": {
+                                "inheritSettings": true,
+                                "enableDXL": true
+                        },
+                        "advanceddeviceconfiguration": {
+                                "inheritSettings": true,
+                                "preAttackBytestoCapture": 256,
+                                "inspectTunneledTraffic": true,
+                                "cliActivityLogging": "DEVICE_AND_MANAGER",
+                                "showCPUUsageinCLI": true,
+                                "restrictSSHAccesstoCLI": false,
+                                "enableSSHLogging": true,
+                                "useTraditionalSnort": false
+                        },
+                        "performancemonitoring": {
+                                "inheritSettings": true,
+                                "enableMetricCollection": true,
+                                "enableThresholdAnalysis": true,
+                                "visibleToChildAdminDomain": true,
+                                "enableCPUUtilizationMetricCollection": true,
+                                "enablePortThroughputUtilizationMetricCollection": true,
+                                "thresholds": [
+                                        {
+                                                "metric": "CPU Usage",
+                                                "thresholds": [
+                                                        {
+                                                                "thresholdName": "High Usage",
+                                                                "direction": "Rising",
+                                                                "thresholdValue": 90,
+                                                                "resetThresholdValue": 70,
+                                                                "enableAlarm": true
+                                                        },
+                                                        {
+                                                                "thresholdName": "Medium Usage",
+                                                                "direction": "Rising",
+                                                                "thresholdValue": 70,
+                                                                "resetThresholdValue": 50,
+                                                                "enableAlarm": true
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "metric": "Sensor Throughput Usage",
+                                                "thresholds": [
+                                                        {
+                                                                "thresholdName": "High Usage",
+                                                                "direction": "Rising",
+                                                                "thresholdValue": 90,
+                                                                "resetThresholdValue": 70,
+                                                                "enableAlarm": true
+                                                        },
+                                                        {
+                                                                "thresholdName": "Medium Usage",
+                                                                "direction": "Rising",
+                                                                "thresholdValue": 70,
+                                                                "resetThresholdValue": 50,
+                                                                "enableAlarm": true
+                                                        },
+                                                        {
+                                                                "thresholdName": "Under Usage",
+                                                                "direction": "Falling",
+                                                                "thresholdValue": 5,
+                                                                "resetThresholdValue": 10,
+                                                                "enableAlarm": false
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "metric": "L2 Error Drop",
+                                                "thresholds": [
+                                                        {
+                                                                "thresholdName": "Too Many L2 Errors",
+                                                                "direction": "Rising",
+                                                                "thresholdValue": 100,
+                                                                "resetThresholdValue": 50,
+                                                                "enableAlarm": true
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "metric": "L3/L4 Error Drop",
+                                                "thresholds": [
+                                                        {
+                                                                "thresholdName": "Too Many L3/L4 Errors",
+                                                                "direction": "Rising",
+                                                                "thresholdValue": 1000,
+                                                                "resetThresholdValue": 100,
+                                                                "enableAlarm": true
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "metric": "Memory Usage",
+                                                "thresholds": [
+                                                        {
+                                                                "thresholdName": "High Usage",
+                                                                "direction": "Rising",
+                                                                "thresholdValue": 90,
+                                                                "resetThresholdValue": 70,
+                                                                "enableAlarm": true
+                                                        },
+                                                        {
+                                                                "thresholdName": "Medium Usage",
+                                                                "direction": "Rising",
+                                                                "thresholdValue": 70,
+                                                                "resetThresholdValue": 50,
+                                                                "enableAlarm": false
+                                                        }
+                                                ]
+                                        }
+                                ],
+                                "display": {
+                                        "mediumMemoryUsage": 75,
+                                        "highMemoryUsage": 90,
+                                        "mediumDeviceThroughputUsage": 75,
+                                        "highDeviceThroughputUsage": 90
+                                }
+                        },
+                        "malwaredownloads": {
+                                "malwareSummaryDetailList": ["!"]
+                        }
+	}           
+}
